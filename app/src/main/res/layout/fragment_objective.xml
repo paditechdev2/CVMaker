@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                android:id="@+id/list_objective"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="0dp"></com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView>
+
+            <LinearLayout
+                android:id="@+id/objective_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_header_height"
+                    android:background="@color/green_dark">
+
+                    <TextView
+                        android:id="@+id/title_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/default_margin_normal"
+                        android:gravity="center_vertical"
+                        android:text="@string/objective"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/app_text_size"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/done_button"
+                        android:layout_width="@dimen/item_header_height"
+                        android:layout_height="@dimen/item_header_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/default_margin_small"
+                        android:padding="@dimen/default_margin_small"
+                        android:src="@mipmap/ic_done" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/input_objective"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_margin_normal"
+                    android:layout_marginTop="@dimen/default_margin_small"
+                    android:background="@color/theme_color_light"
+                    android:paddingLeft="@dimen/default_margin_normal"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:textColor="@color/gray_dark" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

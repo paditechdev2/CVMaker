@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/header_title"></include>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/app_bar_botton_height"
+            android:layout_below="@+id/header">
+
+        </android.support.v4.view.ViewPager>
+
+
+        <RelativeLayout
+            android:id="@+id/bottom_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="@dimen/app_bar_botton_height"
+            android:padding="@dimen/default_margin_normal"
+            android:background="@drawable/shadow_top">
+
+            <Button
+                android:id="@+id/reset_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/default_margin_normal"
+                android:paddingRight="@dimen/default_margin_normal"
+                android:text="@string/add"
+                android:textSize="@dimen/app_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/green_dark"
+                android:background="@drawable/background_delete_button"/>
+
+            <Button
+                android:id="@+id/continue_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="@dimen/default_margin_normal"
+                android:paddingRight="@dimen/default_margin_normal"
+                android:text="@string/next"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/app_text_size"
+                android:background="@drawable/background_continue_button"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

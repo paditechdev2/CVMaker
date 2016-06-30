@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                android:id="@+id/list_other_section"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="0dp"
+                ></com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_header_height"
+                android:background="@color/green_dark">
+
+                <TextView
+                    android:id="@+id/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/other_info"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/app_text_size"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/default_margin_normal"/>
+
+                <ImageView
+                    android:id="@+id/done_button"
+                    android:layout_width="@dimen/item_header_height"
+                    android:layout_height="@dimen/item_header_height"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/default_margin_small"
+                    android:layout_marginRight="@dimen/default_margin_small"
+                    android:src="@mipmap/ic_done"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_margin_normal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_normal"
+                    android:text="@string/section_name"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/app_text_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/input_section_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_height_oneline"
+                    android:layout_marginTop="@dimen/default_margin_small"
+                    android:background="@color/theme_color_light"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="@dimen/default_margin_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_normal"
+                    android:text="@string/section_desc"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/app_text_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/input_section_decs"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_height_multiline"
+                    android:layout_marginTop="@dimen/default_margin_small"
+                    android:background="@color/theme_color_light"
+                    android:maxLines="3"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="@dimen/default_margin_normal" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

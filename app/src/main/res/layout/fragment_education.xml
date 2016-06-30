@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                android:id="@+id/list_education"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="0dp"></com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_header_height"
+                android:background="@color/green_dark">
+
+                <TextView
+                    android:id="@+id/title_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/default_margin_normal"
+                    android:gravity="center_vertical"
+                    android:text="@string/education"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/app_text_size"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/done_button"
+                    android:layout_width="@dimen/item_header_height"
+                    android:layout_height="@dimen/item_header_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/default_margin_small"
+                    android:padding="@dimen/default_margin_small"
+                    android:src="@mipmap/ic_done" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/default_margin_normal"
+                android:paddingRight="@dimen/default_margin_normal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_normal"
+                    android:text="@string/school_name"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/app_text_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/input_school_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_height_oneline"
+                    android:layout_marginTop="@dimen/default_margin_small"
+                    android:background="@color/theme_color_light"
+                    android:gravity="center_vertical"
+                    android:inputType="textCapWords"
+                    android:lines="1"
+                    android:nextFocusForward="@+id/input_address"
+                    android:paddingLeft="@dimen/default_margin_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_normal"
+                    android:text="@string/school_location"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/app_text_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/input_school_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_height_multiline"
+                    android:layout_marginTop="@dimen/default_margin_small"
+                    android:background="@color/theme_color_light"
+                    android:gravity="center_vertical"
+                    android:inputType="textCapWords"
+                    android:maxLines="3"
+                    android:paddingLeft="@dimen/default_margin_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_normal"
+                    android:text="@string/school_degree"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/app_text_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/input_school_degree"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_height_oneline"
+                    android:layout_marginTop="@dimen/default_margin_small"
+                    android:background="@color/theme_color_light"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="@dimen/default_margin_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_normal"
+                    android:text="@string/school_major"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/app_text_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/input_school_major"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_height_multiline"
+                    android:layout_marginTop="@dimen/default_margin_small"
+                    android:background="@color/theme_color_light"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:paddingLeft="@dimen/default_margin_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_normal"
+                    android:text="@string/school_date_period"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/app_text_size"
+                    android:textStyle="bold" />
+
+                <!--<EditText
+                    android:id="@+id/input_date_period"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_height_oneline"
+                    android:layout_marginTop="@dimen/default_margin_small"
+                    android:background="@color/theme_color_light"
+                    android:gravity="center_vertical"
+                    android:inputType="date"
+                    android:lines="1"
+                    android:paddingLeft="@dimen/default_margin_normal" />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/default_margin_small"
+                    android:layout_height="@dimen/input_height_oneline"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_date1"
+                        android:layout_width="@dimen/date_width"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/black"
+                        android:background="@color/theme_color_light"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/tranferance"
+                        android:text="-"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:layout_margin="@dimen/default_margin_normal"
+                        android:layout_gravity="center_vertical"/>
+
+                    <Button
+                        android:id="@+id/btn_date2"
+                        android:layout_width="@dimen/date_width"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/black"
+                        android:background="@color/theme_color_light"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

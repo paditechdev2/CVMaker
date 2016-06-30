@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="@dimen/resume_item_width"
+    android:layout_height="wrap_content"
+    android:paddingRight="@dimen/default_margin_small"
+    android:paddingLeft="@dimen/default_margin_small"
+    android:paddingBottom="@dimen/default_margin_normal">
+
+    <RelativeLayout
+        android:id="@+id/resume_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_cv_light">
+
+        <ImageView
+            android:id="@+id/image_resume"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/resume_item_height"
+            android:src="@mipmap/ic_green_resume"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/btn_down"
+            android:layout_width="@dimen/btn_down_size"
+            android:layout_height="@dimen/btn_down_size"
+            android:padding="@dimen/default_margin_normal"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/default_margin_small"
+            android:src="@mipmap/ic_down_green"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/resume_name"
+            android:text="fadfgsdf"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/app_text_size"
+            android:textColor="@color/black"
+            android:layout_below="@+id/image_resume"
+            android:layout_marginTop="@dimen/default_margin_small"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/resume_date_created"
+            android:text="fadfgsdf"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/app_text_size"
+            android:textColor="@color/black"
+            android:layout_below="@+id/resume_name"
+            android:layout_margin="@dimen/default_margin_small"/>
+    </RelativeLayout>
+</RelativeLayout>

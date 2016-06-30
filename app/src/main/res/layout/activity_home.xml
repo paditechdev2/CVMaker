@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header_title"></include>
+
+    <RelativeLayout
+        android:id="@+id/avatar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/take_photo_layout_height"
+        android:layout_below="@+id/header"
+        android:background="@drawable/shadow_bottom">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/avatar_size"
+            android:layout_height="@dimen/avatar_size"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/default_margin"
+            android:src="@mipmap/ic_user" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/avatar"
+            android:layout_marginTop="@dimen/default_margin_normal"
+            android:textColor="@color/theme_color"
+            android:textSize="@dimen/app_header_text_size"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/resume_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/avatar_layout"
+        android:gravity="center"
+        android:padding="@dimen/default_margin_small"
+        android:textColor="@color/theme_color"
+        android:textSize="@dimen/app_header_text_size" />
+
+    <LinearLayout
+        android:id="@+id/root_ads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+    <GridView
+        android:id="@+id/grid_resume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/root_ads"
+        android:layout_below="@+id/resume_total"
+        android:numColumns="2"
+        android:padding="@dimen/default_margin_normal"></GridView>
+
+</RelativeLayout>

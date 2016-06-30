@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">CVMaker</string>
+
+    <string name="my_resume_builder">My Resume Builder</string>
+    <string name="resume_total" formatted="false">You have %s resume</string>
+    <string name="create_new">Create Resume</string>
+    <string name="message_create_new">Create Resume Name</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="style">Style</string>
+    <string name="resume_section">Resume Section</string>
+    <string name="template_resume">Resume Template</string>
+
+    <string name="personal_info">PERSONAL INFOMATION</string>
+    <string name="objective">OBJECTIVE</string>
+    <string name="work_experence">WORK EXPERIENCE</string>
+    <string name="education">EDUCATION</string>
+    <string name="skills">SKILLS</string>
+    <string name="custom_section">OTHER INFOMATIONS</string>
+
+    <string name="other_info">Other info</string>
+    <string name="full_name">Full Name</string>
+    <string name="address">Address</string>
+    <string name="email_address">Email Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="enter_objectives">Objectives</string>
+    <string name="company_name">Company Name</string>
+    <string name="job_title">Job Title</string>
+    <string name="job_location">Address</string>
+    <string name="date_period">Date Period</string>
+    <string name="job_responseibilities">Your Job Responsibilities</string>
+    <string name="skill">Add your skills</string>
+    <string name="section_name">Section Name</string>
+    <string name="section_desc">Section Description</string>
+    <string name="school_name">School Name</string>
+    <string name="school_location">School Address</string>
+    <string name="school_degree">Degree</string>
+    <string name="school_major">Major</string>
+    <string name="school_date_period">Date period</string>
+
+    <string name="edit">Edit</string>
+    <string name="preview">Preview</string>
+    <string name="send">Send file</string>
+    <string name="delete">Delete</string>
+    <string name="rename">Rename</string>
+    <string name="copy">Copy</string>
+    <string name="print">Print</string>
+    <string name="reset">Reset</string>
+    <string name="language">Language</string>
+    <string name="vietnamese">Tiếng Việt</string>
+    <string name="english">English</string>
+    <string name="japan">Japan</string>
+    <string name="industry">Your Industry</string>
+    <string name="next">Continue</string>
+    <string name="add">Add</string>
+    <string name="complete">Complete</string>
+
+    <string name="no_network">Network is not available!</string>
+    <string name="not_fill_message">Please fill out all informations in this form!</string>
+    <string name="select_language">Select language!</string>
+    <string name="capture_photo">Capture photo</string>
+    <string name="pick_photo">Choose from gallery</string>
+    <string name="enter_new_name">Enter new name!</string>
+
+    <string name="simple_clean">Simple Clean</string>
+    <string name="red_simple_clean">Red Simple Clean</string>
+
+    <string name="use_default_personal">Use default personal info</string>
+    <string name="feed_back">Feedback</string>
+    <string name="share_app">Share this app</string>
+    <string name="rate_app">Rate this app</string>
+    <string name="settings">Settings</string>
+
+    <string name="banner_home_footer">ca-app-pub-4252112411046069/5957413634</string>
+    <string name="device_id">FB222901AA4CA773CF6F8D838D0702B2</string>
+
+    <string name="permisson_storage_dialog">If you want to make a Resume, you have to allow saving file in storage!</string>
+    <string name="now">now</string>
+
+
+</resources>

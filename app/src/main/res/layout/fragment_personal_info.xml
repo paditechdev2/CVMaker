@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/default_margin_normal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_normal"
+                android:text="@string/full_name"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/app_text_size"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height_oneline"
+                android:layout_marginTop="@dimen/default_margin_small"
+                android:background="@color/theme_color_light"
+                android:gravity="center_vertical"
+                android:inputType="textCapWords"
+                android:nextFocusForward="@+id/input_address"
+                android:paddingLeft="@dimen/default_margin_normal"
+                android:lines="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_normal"
+                android:text="@string/address"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/app_text_size"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/input_address"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height_multiline"
+                android:layout_marginTop="@dimen/default_margin_small"
+                android:background="@color/theme_color_light"
+                android:gravity="center_vertical"
+                android:inputType="textCapWords"
+                android:paddingLeft="@dimen/default_margin_normal"
+                android:maxLines="3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_normal"
+                android:text="@string/email_address"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/app_text_size"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height_oneline"
+                android:layout_marginTop="@dimen/default_margin_small"
+                android:background="@color/theme_color_light"
+                android:gravity="center_vertical"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/default_margin_normal"
+                android:lines="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_normal"
+                android:text="@string/phone_number"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/app_text_size"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/input_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height_oneline"
+                android:layout_marginTop="@dimen/default_margin_small"
+                android:background="@color/theme_color_light"
+                android:gravity="center_vertical"
+                android:inputType="phone"
+                android:paddingLeft="@dimen/default_margin_normal"
+                android:lines="1" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

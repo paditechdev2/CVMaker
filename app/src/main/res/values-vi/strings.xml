@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CVMaker</string>
+    <string name="my_resume_builder">CV của tôi</string>
+    <string name="resume_total" formatted="false">Bạn đang có %s cv</string>
+    <string name="create_new">Tạo mới</string>
+    <string name="message_create_new">Hãy điền tên CV!</string>
+    <string name="ok">Xong</string>
+    <string name="cancel">Thoát</string>
+    <string name="style">Các mẫu CV</string>
+    <string name="resume_section">Thông tin CV</string>
+    <string name="template_resume">Các mẫu CV</string>
+    <string name="complete">Hoàn thành</string>
+
+    <string name="add">Thêm</string>
+    <string name="personal_info">THÔNG TIN CÁ NHÂN</string>
+    <string name="objective">MỤC TIÊU</string>
+    <string name="work_experence">KINH NGHIỆM</string>
+    <string name="education">TRÌNH ĐỘ</string>
+    <string name="skills">KĨ NĂNG</string>
+    <string name="custom_section">THÔNG TIN KHÁC</string>
+
+
+    <string name="full_name">Họ và tên</string>
+    <string name="address">Địa chỉ</string>
+    <string name="email_address">Email</string>
+    <string name="phone_number">Số điện thoại</string>
+    <string name="enter_objectives">Mục tiêu</string>
+    <string name="company_name">Tên công ty</string>
+    <string name="job_title">Tên công việc</string>
+    <string name="job_location">Địa chỉ</string>
+    <string name="date_period">Thời gian làm việc</string>
+    <string name="job_responseibilities">Nhiệm vụ công việc </string>
+    <string name="skill">Các kĩ năng</string>
+    <string name="section_name">Tiêu đề</string>
+    <string name="section_desc">Nội dung</string>
+    <string name="school_name">Tên trường</string>
+    <string name="school_location">Địa chỉ</string>
+    <string name="school_degree">Trình độ</string>
+    <string name="school_major">Chuyên ngành</string>
+    <string name="school_date_period">Thời gian</string>
+    <string name="other_info">Thông tin khác</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="vietnamese">Tiếng Việt</string>
+    <string name="japan">Nhật Bản</string>
+    <string name="english">English</string>
+    <string name="industry">Nghề nghiệp</string>
+
+    <string name="edit">Sửa</string>
+    <string name="preview">Xem trước</string>
+    <string name="send">Gửi file</string>
+    <string name="delete">Xóa</string>
+    <string name="rename">Đổi tên</string>
+    <string name="copy">Sao chép</string>
+    <string name="reset">Làm mới</string>
+    <string name="print">In</string>
+
+    <string name="no_network">Hãy kiểm tra kết nối mạng!</string>
+    <string name="not_fill_message">Hãy điền đầy đủ các thông tin nhé!</string>
+    <string name="select_language">Chọn ngôn ngữ</string>
+    <string name="capture_photo">Chụp ảnh</string>
+    <string name="pick_photo">Chọn ảnh từ thư viện</string>
+    <string name="enter_new_name">Hãy nhập tên mới!</string>
+
+    <string name="use_default_personal">Sử dụng thông tin cá nhân mặc định</string>
+    <string name="feed_back">Phản hồi</string>
+    <string name="share_app">Chia sẻ app</string>
+    <string name="rate_app">Bình chọn app</string>
+    <string name="settings">Cài đặt</string>
+
+    <string name="permisson_storage_dialog">Bạn cần cho phép ứng dụng lưu trữ file vào bộ nhớ nếu bạn muốn tạo một CV!</string>
+    <string name="now">nay</string>
+
+    <string name="next">Tiếp</string>
+    <string name="simple_clean">Simple Clean</string>
+    <string name="red_simple_clean">Red Simple Clean</string>
+    <string name="banner_home_footer">ca-app-pub-4252112411046069/5957413634</string>
+    <string name="device_id">FB222901AA4CA773CF6F8D838D0702B2</string>
+</resources>

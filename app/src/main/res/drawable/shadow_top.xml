@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Drop Shadow Stack -->
+    <item>
+        <shape>
+            <gradient
+                android:centerColor="#D5E2ED"
+                android:endColor="#0000"
+                android:angle="90"/>
+        </shape>
+    </item>
+
+    <!-- base background -->
+    <item android:top="4dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/green_dark" />
+        </shape>
+    </item>
+
+</layer-list>

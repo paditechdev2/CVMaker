@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="gray_action">#B0AEB0</color>
+    <color name="green_background_cv">#32C798</color>
+    <color name="green_cv_light">#C4FFE4</color>
+    <color name="red_background_cv">#F57A22</color>
+    <color name="red_cv_light">#FFE7D6</color>
+    <color name="purple_background_cv">#DE1892</color>
+    <color name="purple_cv_light">#FAD4EC</color>
+    <color name="green_dark">#4CA3D9</color>
+    <color name="theme_color">#56b9f5</color>
+    <color name="theme_color_light">#DCF2FA</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="gray_dark">#5C5F61</color>
+    <color name="personal_bg">#346E9E</color>
+    <color name="objective_bg">#F04022</color>
+    <color name="experience_bg">#10B37A</color>
+    <color name="education_bg">#F5A30C</color>
+    <color name="skill_bg">#40C7C0</color>
+    <color name="custom_section_bg">#1F5406</color>
+    <color name="tranferance">#00000000</color>
+    <color name="white_tranfer">#99ffffff</color>
+    <color name="gray_light">#DEDFE0</color>
+    <color name="gray_tranfer">#905C5F61</color>
+
+    <color name="splash_center">#2a883a</color>
+    <color name="splash_end">#05460e</color>
+    <color name="splash_start">#8dc540</color>
+
+</resources>

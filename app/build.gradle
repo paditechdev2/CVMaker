@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.paditech.cvmarker"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 2
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.jakewharton:butterknife:6.1.0'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.orhanobut:dialogplus:1.11@aar'
+    compile 'com.github.barteksc:android-pdf-viewer:1.0.0'
+    compile 'com.github.paolorotolo:expandableheightlistview:1.0.0'
+    compile 'com.itextpdf:itextg:5.5.9'
+    compile 'com.akexorcist:localizationactivity:1.0.6'
+    compile 'com.google.android.gms:play-services-ads:9.0.1'
+}
