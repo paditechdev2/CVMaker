@@ -340,7 +340,7 @@ public class FillResumeDetailActivity extends BaseActivity {
         adView.setAdUnitId(getResources().getString(R.string.banner_home_footer));
         mRootAds.addView(adView,new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
 
-        AdRequest ar = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
+        AdRequest ar = new AdRequest.Builder().build();
         adView.loadAd(ar);
     }
 
